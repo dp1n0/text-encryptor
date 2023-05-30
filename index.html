@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>        
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="styleSheet" href="./styles.css">
+        <script src="./code.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <input class="textInput" placeholder="Ingrese el texto aqui" type="text" id="idInput">
+        <div class="logo">
+            <img src="./assets/logo.png">
+        </div>
+        
+        <div class="frame">
+            <button class="encrypt" id="encrypt">
+                <section id="encryptText">Encriptar</section>
+            </button>
+            <button class="decrypt" id="decrypt">
+                <section id="decryptText">Desencriptar</section>
+            </button>
+        </div>
+
+        <div class="rectangle">            
+        </div>
+
+        <div class="image" id="image">
+            <img src="./assets/Muñeco.png">
+        </div>
+
+        <div class="frame1">
+            <section id="exclamation">
+                <img src="./assets/bi_exclamation-circle-fill.png">
+            </section>
+
+            <section id="exclamationText">
+                Solo letras minúsculas y sin acentos
+            </section>
+        </div>
+        
+        <div class="frame5" id="textNotFind">
+            <section id="textStatus">
+                Ningún mensaje fue encontrado
+            </section>
+
+            <section id="textED">
+                Ingresa el texto que desees encriptar o desencriptar.
+            </section>
+        </div>
+
+        <div class="textInput2" id="idTextInput2">
+            <span id="idSpanTextInput"></span>
+        </div>
+
+        <div class="outputText" id="idOutputText">
+            <span id="text"></span>
+        </div>
+
+        <div class="copyButton">
+            <button class="copySection">
+                Copiar
+            </button>            
+        </div>
+    </body>
+</html>

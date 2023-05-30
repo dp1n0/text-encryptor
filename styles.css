@@ -1,0 +1,463 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F5FC;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.textInput {
+    /* Ingrese el texto aqui */
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: none;
+}
+
+.frame {
+    /* Frame 3 */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.encrypt {
+    /* Button */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#encryptText {
+    /* Button */
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* White */
+    color: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.decrypt {
+    /* Button */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+    
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#decryptText {
+    /* Button */
+    width: 280px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.rectangle {
+    /* Rectangle 1 */
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    /* White */
+    background: #FFFFFF;
+    
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.image {
+    /* Muñeco */
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.frame5 {
+    /* Frame 5 */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+#textStatus {
+    /* Ningún mensaje fue encontrado */
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#textED {
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.copyButton {
+    /* Button */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    display: none;
+}
+
+.copySection {
+    /* Button */
+    width: 288px;
+    height: 19px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    background-color: white;
+    border: none;
+}
+
+.outputText {
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas. */
+
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+    display: none;
+}
+
+.textInput2 {
+    /* Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas */
+
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* or 48px */
+
+    color: #0A3871;
+    display: none;
+}
+
+.frame1 {
+    /* Frame 1 */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+#exclamationText {
+    /* Solo letras minúsculas y sin acentos */
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+@media screen and (max-width:485px) {
+    .image, .rectangle {
+        display: none;
+    }
+
+    .textInput {
+        width: 343px;
+        left: 16px;
+        top: 152px;
+    }
+
+    .frame5 {
+        padding: 32px 32px 0px 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 268px;
+        height: 186px;
+        left: 24px;
+        top: 682px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+
+    #textStatus, #textED {
+        width: 263px;
+    }
+
+    .frame1 {
+        left: 16px;
+        top: 451px;
+    }
+
+    .frame {
+        flex-direction: column;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+
+    .encrypt {
+        width: 343px;
+        align-self: stretch;
+    }
+
+    #encryptText, #decryptText {
+        width: 295px;
+    }
+
+    .decrypt {
+        width: 343px;
+        align-self: stretch;
+    }
+
+    .outputText {
+        position: absolute;
+        left: 24px;
+        top: 682px;
+
+        width: 279px;
+        height: 432px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .copyButton {
+        position: absolute;
+        left: 16px;
+        top: 1096px;
+
+        width: 343px;
+        height: 67px;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .copySection {
+        width: 295px;
+        background-color: #F3F5FC;
+    }
+
+    .textInput2 {
+        width: 343px;
+        height: 300px;
+        left: 16px;
+        top: 152px;
+    }
+}
